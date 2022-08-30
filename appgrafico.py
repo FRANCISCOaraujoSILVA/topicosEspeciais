@@ -6,7 +6,7 @@ with open("style.css") as p:
 
 st.title(":sunglasses:")
 
-
+#
 st.sidebar.title('*Menu Inicial*')
 varpagina = st.sidebar.selectbox('Selecione a função para visualizar o gráfico:', ['Função 1', 'Função 2'])
 if varpagina == 'Função 1':
