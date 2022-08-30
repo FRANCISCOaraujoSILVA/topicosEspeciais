@@ -30,5 +30,3 @@ elif varpagina == 'Função 2':
     st.markdown('*(220 * np.sqrt(2) * np.sin(2 * np.pi * 60 * t)) ** 2*')
     st.plotly_chart(fig2)
 
-# Finalizado
-
