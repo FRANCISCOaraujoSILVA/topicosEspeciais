@@ -1,7 +1,6 @@
 import streamlit as st
 import numpy as np
 import plotly.graph_objects as go
-# Uma pequena observação
 with open("style.css") as p:
     st.markdown(f"<style>{p.read()}<\style>", unsafe_allow_html=True)
 
