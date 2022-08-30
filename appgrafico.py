@@ -6,7 +6,6 @@ with open("style.css") as p:
 
 st.title(":sunglasses:")
 
-#
 st.sidebar.title('*Menu Inicial*')
 varpagina = st.sidebar.selectbox('Selecione a função para visualizar o gráfico:', ['Função 1', 'Função 2'])
 if varpagina == 'Função 1':
@@ -31,4 +30,5 @@ elif varpagina == 'Função 2':
     st.markdown('*(220 * np.sqrt(2) * np.sin(2 * np.pi * 60 * t)) ** 2*')
     st.plotly_chart(fig2)
 
+# Finalizado
 
