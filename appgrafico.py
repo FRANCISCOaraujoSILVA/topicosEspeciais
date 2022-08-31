@@ -5,7 +5,7 @@ with open("style.css") as p:
     st.markdown(f"<style>{p.read()}<\style>", unsafe_allow_html=True)
 
 st.title(":sunglasses:")
-
+# Comentário
 st.sidebar.title('*Menu Inicial*')
 varpagina = st.sidebar.selectbox('Selecione a função para visualizar o gráfico:', [st.latex(r'''200 \times \sqrt(2) \times \sin(2 \times \times \pi \times 60 \times t'''), st.latex(r'''(200 \times \sqrt(2) \times \sin(2 \times \times \pi \times 60 \times t)^2''')])
 if varpagina == st.latex(r'''200 \times \sqrt(2) \times \sin(2 \times \times \pi \times 60 \times t'''):
