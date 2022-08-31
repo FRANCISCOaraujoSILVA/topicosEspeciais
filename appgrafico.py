@@ -15,7 +15,7 @@ if varpagina == "Função 1":
     v1 = 220 * np.sqrt(2) * np.sin(2 * np.pi * 60 * t)
     fig1 = go.Figure(data=go.Scatter(x=t, y=v1))
     fig1.data[0].line.color = color
-    st.latex(r'''200 \times \sqrt2 \times \sin(2 \times \pi \times 60 \times t''')
+    st.latex(r'''200 \times \sqrt2 \times \sin(2 \times \pi \times 60 \times t)''')
     st.plotly_chart(fig1)
 
 elif varpagina == "Função 2":
