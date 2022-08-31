@@ -5,10 +5,11 @@ with open("style.css") as p:
     st.markdown(f"<style>{p.read()}<\style>", unsafe_allow_html=True)
 
 st.title(":sunglasses:")
-# Comentário
+Função1 = st.latex(r'''200 \times \sqrt(2) \times \sin(2 \times \times \pi \times 60 \times t''')
+Função2 = st.latex(r'''(200 \times \sqrt(2) \times \sin(2 \times \times \pi \times 60 \times t)^2''')
 st.sidebar.title('*Menu Inicial*')
-varpagina = st.sidebar.selectbox('Selecione a função para visualizar o gráfico:', [st.latex(r'''200 \times \sqrt(2) \times \sin(2 \times \times \pi \times 60 \times t'''), st.latex(r'''(200 \times \sqrt(2) \times \sin(2 \times \times \pi \times 60 \times t)^2''')])
-if varpagina == st.latex(r'''200 \times \sqrt(2) \times \sin(2 \times \times \pi \times 60 \times t'''):
+varpagina = st.sidebar.selectbox('Selecione a função para visualizar o gráfico:', [Função1, Função2])
+if varpagina == Função1:
     x = st.slider('Domínio', min_value=0.00000000001, max_value=0.1, step=0.00001)
     color = st.color_picker('Cores', '#00f900')
     t = np.linspace(0, x, 1000)
@@ -18,7 +19,7 @@ if varpagina == st.latex(r'''200 \times \sqrt(2) \times \sin(2 \times \times \pi
     st.markdown(st.latex(r'''200 \times \sqrt(2) \times \sin(2 \times \times \pi \times 60 \times t'''))
     st.plotly_chart(fig1)
 
-elif varpagina == st.latex(r'''(200 \times \sqrt(2) \times \sin(2 \times \times \pi \times 60 \times t)^2'''):
+elif varpagina == Função2:
     x = st.slider('Domínio', min_value=0.00000000001, max_value=0.1, step=0.00001)
     color = st.color_picker('Cores', '#D20A41')
     t = np.linspace(0, x, 1000)
